@@ -11,7 +11,7 @@ class AppleSignInButton extends StatefulWidget {
   /// The callback that is called when the button is tapped or otherwise activated.
   ///
   /// If this is set to null, the button will be disabled.
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
 
   /// A type for the authorization button.
   final ButtonType type;
@@ -33,10 +33,10 @@ class AppleSignInButton extends StatefulWidget {
       this.style = ButtonStyle.white,
       this.cornerRadius = 6,
       this.buttonText = '',
-      this.buttonKey = const Key('apple_signin')})
-      : assert(type != null),
+      this.buttonKey = const Key('apple_signin')});
+  /* : assert(type != null),
         assert(style != null),
-        assert(cornerRadius != null);
+        assert(cornerRadius != null); */
 
   @override
   State<StatefulWidget> createState() => _AppleSignInButtonState();
@@ -59,7 +59,7 @@ class _AppleSignInButtonState extends State<AppleSignInButton> {
       onTapDown: (_) => setState(() => _isTapDown = true),
       onTapUp: (_) {
         setState(() => _isTapDown = false);
-        widget?.onPressed();
+        widget.onPressed!();
       },
       onTapCancel: () => setState(() => _isTapDown = false),
       child: AnimatedContainer(
@@ -123,7 +123,7 @@ class _AppleSignInButtonState extends State<AppleSignInButton> {
 class _AppleLogoPainter extends CustomPainter {
   final Color color;
 
-  _AppleLogoPainter({@required this.color});
+  _AppleLogoPainter({required this.color});
 
   @override
   void paint(Canvas canvas, Size size) {

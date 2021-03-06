@@ -1,3 +1,7 @@
+## 1.1.0
+
+* Null Safety and Flutter2 stuff
+
 ## 1.0.0
 
 * Customisable text for the Button, for use by localization 
