@@ -1,0 +1,27 @@
+name: the_apple_sign_in
+description: Sign in With Apple for Flutter. Native API bindings and a Flutter implementation of the sign in button.
+version: 1.0.0
+homepage: https://github.com/beerstorm-net/the_apple_sign_in
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# The following section is specific to Flutter.
+flutter:
+  # This section identifies this Flutter project as a plugin project.
+  # The 'pluginClass' and Android 'package' identifiers should not ordinarily
+  # be modified. They are used by the tooling to maintain consistency when
+  # adding or updating assets for this project.
+  plugin:
+    platforms:
+      ios:
+        pluginClass: TheAppleSignInPlugin

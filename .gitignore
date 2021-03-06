@@ -1,0 +1,19 @@
+.*
+!.gitignore
+
+build/
+# See https://www.dartlang.org/guides/libraries/private-files
+# If you're building an application, you may want to check-in your pubspec.lock
+!pubspec.lock
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
