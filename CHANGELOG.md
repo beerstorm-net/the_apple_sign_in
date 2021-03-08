@@ -1,3 +1,7 @@
+## 1.1.1
+
+* Update Example app for better readability
+
 ## 1.1.0
 
 * Null Safety and Flutter2 stuff

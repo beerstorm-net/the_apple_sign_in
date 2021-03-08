@@ -1,7 +1,7 @@
 
 # The Apple Sign In - Flutter Plugin
 
-**NB! `the_apple_sign_in` is the revisited and updated version of [flutter_apple_sign_in](https://github.com/tomgilder/flutter_apple_sign_in) by Tom Gilder (which is not maintained anymore...).**  
+**NB! `the_apple_sign_in` is the revisited and updated version of [flutter_apple_sign_in](https://github.com/tomgilder/flutter_apple_sign_in) by Tom Gilder (which is not maintained anymore...).** 
 **Thus, `the_apple_sign_in` will be maintained and updated by [beerstorm](https://github.com/beerstorm-net)**
 
 Before beginning, read related docs about [Sign In with Apple](https://developer.apple.com/sign-in-with-apple/).
@@ -39,5 +39,4 @@ Sign In with Apple requires Xcode 11, as it requires the iOS 13 SDK. Make sure y
 
 ## To Do
 
-* A proper step-by-step example
 * Support for [PasswordProvider](https://developer.apple.com/documentation/authenticationservices/asauthorizationpasswordprovider)
