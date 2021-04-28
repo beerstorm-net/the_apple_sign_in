@@ -6,6 +6,9 @@ build/
 # If you're building an application, you may want to check-in your pubspec.lock
 !pubspec.lock
 
+# ignore locally used temp files
+**/localtemp/
+
 # Miscellaneous
 *.class
 *.log

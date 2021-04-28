@@ -1,3 +1,8 @@
+## 1.2.0
+
+* Added macOS support
+* Placeholder for Android for later iterations
+
 ## 1.1.1
 
 * Update Example app for better readability
