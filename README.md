@@ -10,6 +10,8 @@ Before beginning, read related docs about [Sign In with Apple](https://developer
 
 This plugin currently supports only iOS platform. If needed, there's a [JavaScript framework](https://developer.apple.com/documentation/signinwithapplejs) for Android.
 
+NB! I recommend using `iOS 13.x emulators`, because `iOS 14.x emulators` have issues with Apple SignIn.  
+see details [from Apple forum >>](https://developer.apple.com/forums/thread/651533?answerId=675235022#675235022)  
 
 ## Implementing
 
