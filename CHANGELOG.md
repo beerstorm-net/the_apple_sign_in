@@ -1,3 +1,8 @@
+## 1.1.2
+
+* update package names in native iOS code  
+* Re-impl Example app using Firebase Auth  
+
 ## 1.1.1
 
 * Update Example app for better readability

@@ -20,7 +20,7 @@
               binaryMessenger:(NSObject<FlutterBinaryMessenger>*)messenger {
     
     if ([super init]) {
-        NSString* channelName = [NSString stringWithFormat:@"dev.gilder.tom/apple_sign_in_button_%lld", viewId];
+        NSString* channelName = [NSString stringWithFormat:@"net.beerstorm/the_apple_sign_in_button_%lld", viewId];
         _channel = [FlutterMethodChannel methodChannelWithName:channelName binaryMessenger:messenger];
         
         _viewId = viewId;

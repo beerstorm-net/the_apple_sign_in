@@ -1,6 +1,6 @@
 name: the_apple_sign_in
 description: Sign in With Apple for Flutter. Native API bindings and a Flutter implementation of the sign in button.
-version: 1.1.1
+version: 1.1.2
 homepage: https://github.com/beerstorm-net/the_apple_sign_in
 
 environment:

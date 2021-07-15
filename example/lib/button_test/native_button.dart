@@ -31,7 +31,7 @@ class NativeAppleSignInButton extends StatelessWidget {
     return ConstrainedBox(
       constraints: BoxConstraints(minHeight: 50, maxHeight: 50),
       child: UiKitView(
-          viewType: "dev.gilder.tom/apple_id_button",
+          viewType: "net.beerstorm/apple_id_button",
           creationParamsCodec: const StandardMessageCodec(),
           creationParams: _buildCreationParams(),
           onPlatformViewCreated: _createMethodChannel),
@@ -48,7 +48,7 @@ class NativeAppleSignInButton extends StatelessWidget {
   }
 
   void _createMethodChannel(int nativeViewId) {
-    MethodChannel("dev.gilder.tom/apple_sign_in_button_$nativeViewId")
+    MethodChannel("net.beerstorm/the_apple_sign_in_button_$nativeViewId")
       ..setMethodCallHandler(_onMethodCall);
   }
 
