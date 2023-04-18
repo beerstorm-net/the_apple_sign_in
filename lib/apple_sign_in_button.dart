@@ -45,6 +45,9 @@ class AppleSignInButton extends StatefulWidget {
   // An optional 'word spacing' to be used by this button text.
   final double wordSpacing;
 
+  // An optional 'icon height' to be used by this button's apple icon.
+  final double appleIconHeight;
+
   const AppleSignInButton(
       {this.onPressed,
       this.type = ButtonType.defaultButton,
@@ -57,7 +60,8 @@ class AppleSignInButton extends StatefulWidget {
       this.fontSize = 20,
       this.fontWeight = FontWeight.w500,
       this.letterSpacing = .3,
-      this.wordSpacing = -.5});
+      this.wordSpacing = -.5,
+      this.appleIconHeight = 14});
   /* : assert(type != null),
         assert(style != null),
         assert(cornerRadius != null); */
@@ -108,7 +112,7 @@ class _AppleSignInButtonState extends State<AppleSignInButton> {
             Padding(
               padding: const EdgeInsets.only(bottom: 1, left: 2, right: 6),
               child: SizedBox(
-                height: 14,
+                height: widget.appleIconHeight,
                 child: AspectRatio(
                   aspectRatio: 25 / 31,
                   child: CustomPaint(
