@@ -6,7 +6,7 @@ description: Demonstrates how to use the the_apple_sign_in plugin.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.12.0 <4.0.0"
 
 dependencies:
   flutter:
@@ -22,14 +22,14 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
+  cupertino_icons: ^1.0.6
 
+  before_after: any
+  flutter_secure_storage: any
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_secure_storage: ^4.0.0
-  before_after: ^2.1.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

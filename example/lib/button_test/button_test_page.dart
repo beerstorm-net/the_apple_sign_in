@@ -1,5 +1,4 @@
 import 'package:before_after/before_after.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:the_apple_sign_in/the_apple_sign_in.dart' as TheAppleSignIn;
 
@@ -58,7 +57,7 @@ class ButtonComparison extends StatelessWidget {
   final TheAppleSignIn.ButtonStyle style;
   final TheAppleSignIn.ButtonType type;
 
-  ButtonComparison({@required this.style, @required this.type});
+  ButtonComparison({required this.style, required this.type});
 
   @override
   Widget build(BuildContext context) {
@@ -88,13 +87,13 @@ class ButtonComparison extends StatelessWidget {
             // ),
             Text('Native / Flutter'),
             BeforeAfter(
-              imageCornerRadius: 0,
+              //imageCornerRadius: 0,
               thumbColor: Colors.blue,
-              beforeImage: NativeAppleSignInButton(
+              before: NativeAppleSignInButton(
                 style: style,
                 type: type,
               ),
-              afterImage: TheAppleSignIn.AppleSignInButton(
+              after: TheAppleSignIn.AppleSignInButton(
                 style: style,
                 type: type,
               ),

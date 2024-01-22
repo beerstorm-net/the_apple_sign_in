@@ -1,7 +1,6 @@
 import 'dart:typed_data';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:the_apple_sign_in/apple_id_credential.dart';
 import 'package:the_apple_sign_in/the_apple_sign_in.dart';
 
 void main() {

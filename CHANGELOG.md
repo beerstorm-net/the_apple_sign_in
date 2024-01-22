@@ -1,3 +1,8 @@
+## 1.1.2
+
+* merge PR #12 about: Added custom borderWidth, buttonHeight, fontSize, fontWeight, letterSpacing, wordSpacing  
+* Update Example app for better readability  
+
 ## 1.1.1
 
 * Update Example app for better readability

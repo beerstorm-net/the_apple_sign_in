@@ -9,7 +9,7 @@ class NativeAppleSignInButton extends StatelessWidget {
   /// The callback that is called when the button is tapped or otherwise activated.
   ///
   /// If this is set to null, the button will be disabled.
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
 
   /// A type for the authorization button.
   final TheAppleSignIn.ButtonType type;
@@ -56,16 +56,13 @@ class NativeAppleSignInButton extends StatelessWidget {
     switch (call.method) {
       case "onTapped":
         _onTapped();
-        return null;
+      //return null;
     }
 
-    throw MissingPluginException(
-        "AppleSignInButton._onMethodCall: no handler for ${call.method}");
+    throw MissingPluginException("AppleSignInButton._onMethodCall: no handler for ${call.method}");
   }
 
   void _onTapped() {
-    if (onPressed != null) {
-      onPressed();
-    }
+    onPressed!();
   }
 }
