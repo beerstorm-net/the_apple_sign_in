@@ -22,10 +22,31 @@ class AppleSignInButton extends StatefulWidget {
   /// A custom corner radius to be used by this button.
   final double cornerRadius;
 
+  /// A custom border width to be used by this button.
+  final double borderWidth;
+
   // An optional 'custom text' to display on the button, NB! it can used for localized text
   final String buttonText;
   // An optional 'Key' to identify the button, NB! it can be used for integration tests
   final Key buttonKey;
+
+  // An optional 'height' to be used by this button.
+  final double buttonHeight;
+
+  // An optional 'font size' to be used by this button text.
+  final double fontSize;
+
+  // An optional 'font weight' to be used by this button text.
+  final FontWeight fontWeight;
+
+  // An optional 'letter spacing' to be used by this button text.
+  final double letterSpacing;
+
+  // An optional 'word spacing' to be used by this button text.
+  final double wordSpacing;
+
+  // An optional 'icon height' to be used by this button's apple icon.
+  final double appleIconHeight;
 
   const AppleSignInButton(
       {this.onPressed,
@@ -33,7 +54,14 @@ class AppleSignInButton extends StatefulWidget {
       this.style = ButtonStyle.white,
       this.cornerRadius = 6,
       this.buttonText = '',
-      this.buttonKey = const Key('apple_signin')});
+      this.buttonKey = const Key('apple_signin'),
+      this.buttonHeight = 50,
+      this.borderWidth = .7,
+      this.fontSize = 20,
+      this.fontWeight = FontWeight.w500,
+      this.letterSpacing = .3,
+      this.wordSpacing = -.5,
+      this.appleIconHeight = 14});
   /* : assert(type != null),
         assert(style != null),
         assert(cornerRadius != null); */
@@ -69,13 +97,13 @@ class _AppleSignInButtonState extends State<AppleSignInButton> {
           maxHeight: 64,
           minWidth: 200,
         ),
-        height: 50,
+        height: widget.buttonHeight,
         decoration: BoxDecoration(
           color: _isTapDown ? Colors.grey : bgColor,
           borderRadius: BorderRadius.all(
             Radius.circular(widget.cornerRadius),
           ),
-          border: Border.all(width: .7, color: borderColor),
+          border: Border.all(width: widget.borderWidth, color: borderColor),
         ),
         child: Center(
             child: Row(
@@ -84,7 +112,7 @@ class _AppleSignInButtonState extends State<AppleSignInButton> {
             Padding(
               padding: const EdgeInsets.only(bottom: 1, left: 2, right: 6),
               child: SizedBox(
-                height: 14,
+                height: widget.appleIconHeight,
                 child: AspectRatio(
                   aspectRatio: 25 / 31,
                   child: CustomPaint(
@@ -96,10 +124,10 @@ class _AppleSignInButtonState extends State<AppleSignInButton> {
             Text(
               _buttonText(),
               style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w500,
-                letterSpacing: .3,
-                wordSpacing: -.5,
+                fontSize: widget.fontSize,
+                fontWeight: widget.fontWeight,
+                letterSpacing: widget.letterSpacing,
+                wordSpacing: widget.wordSpacing,
                 color: textColor,
               ),
             ),

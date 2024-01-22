@@ -14,8 +14,8 @@ NB! I recommend using `iOS 13.x emulators`, because `iOS 14.x emulators` have is
 
 ## Implementing
 
-1. [Configure your app](https://help.apple.com/developer-account/#/devde676e696) in Xcode to add the "Sign In with Apple" capability
-2. See [the example app](https://github.com/beerstorm-net/the_apple_sign_in/blob/master/example/lib/sign_in_page.dart) to see how the API works
+1. [Configure your app](https://developer.apple.com/documentation/xcode/configuring-sign-in-with-apple) in Xcode to add the "Sign In with Apple" capability
+2. See [the example app](https://github.com/beerstorm-net/the_apple_sign_in/blob/master/example/lib/main.dart) to see how the API works
 
 ## FAQs
 
